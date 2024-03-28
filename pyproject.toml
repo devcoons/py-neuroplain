@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "neuroplain"
-version = "0.0.1"
+version = "0.0.3"
 description = "Simple and easy to use neural networks library"
 readme = "README.md"
 authors = [{ name = "Ioannis D (devcoons)", email = "support@devcoons.com" }]
@@ -26,7 +26,7 @@ classifiers = [
 ]
 keywords = ["neuroplain","neural networks"]
 dependencies = [
-    "numpy==1.26.0",
+    "numpy>=1.26.0",
 ]
 
 requires-python = ">=3.9"
