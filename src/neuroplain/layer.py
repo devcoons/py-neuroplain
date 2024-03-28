@@ -1,8 +1,10 @@
+import time
 import numpy as np
 
 class Layer:
 
     def __init__(self, input_size, output_size, activation_function):
+        np.random.seed(seed=int(time.time())) 
         self.weights = np.random.randn(output_size, input_size) * np.sqrt(2. / input_size)
         self.biases = np.zeros((output_size, 1))
         self.activation_function = activation_function
